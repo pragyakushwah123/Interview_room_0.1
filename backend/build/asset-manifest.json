@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dbfbf981.css",
+    "main.js": "/static/js/main.6219cf4b.js",
+    "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
+    "static/media/GIFvoiceassistant.gif": "/static/media/GIFvoiceassistant.8f5004437585449f3be8.gif",
+    "static/media/alian.png": "/static/media/alian.27490690ccca6a1aefed.png",
+    "static/media/cont-anm.gif": "/static/media/cont-anm.eafe87eb75ee911aa584.gif",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/logo.png": "/static/media/logo.5ec9d7833c5f0cd1beb4.png",
+    "static/media/giphy.webp": "/static/media/giphy.1ba4209210ce74cd565c.webp",
+    "static/media/user.png": "/static/media/user.5faf09a7795d28bf5a2b.png",
+    "index.html": "/index.html",
+    "main.dbfbf981.css.map": "/static/css/main.dbfbf981.css.map",
+    "main.6219cf4b.js.map": "/static/js/main.6219cf4b.js.map",
+    "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbfbf981.css",
+    "static/js/main.6219cf4b.js"
+  ]
+}
