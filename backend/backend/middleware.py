@@ -5,10 +5,10 @@ from django.utils.deprecation import MiddlewareMixin
 assistant_pid = None
 
 class AbortDetectionMiddleware(MiddlewareMixin):
-    def _init_(self, get_response):
+    def __init__(self, get_response):
         self.get_response = get_response
 
-    def _call_(self, request):
+    def __call__(self, request):
         global assistant_pid
 
         response = self.get_response(request)

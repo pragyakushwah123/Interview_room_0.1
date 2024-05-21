@@ -15,13 +15,13 @@ const Profile = (props) => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center py-5 px-4">
+        <div className="flex items-center justify-center mt-5">
             <div className="w-full max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <div className="flex flex-col items-center pb-0">
+                <div className="flex flex-col items-center pb-10">
                     <img alt="User Icon" width="96" height="96" src={UserIcon} className="mb-3 rounded-full shadow-lg" />
                     <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
                     <span className="text-sm text-gray-500 dark:text-gray-400">{email}</span>
-                    <div className="mt-4 pb-4  lg:mt-6 w-100">
+                    <div className="mt-4  lg:mt-6 w-100">
                         <div className="userprofile">
                             <h6>Name:</h6>
                             <span className="details"><h6>{name}</h6></span>
@@ -44,4 +44,4 @@ const Profile = (props) => {
     );
 };
 
-export default Profile;
+export default Profile;

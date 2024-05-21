@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-BASE_DIR = Path(__file__).resolve().parent.parent
+import os
+
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-69l#75g4iw!@si+##tq+#qg#4_j@5+diw7)x%*!1b-%44d0w$s'
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -31,6 +34,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -40,12 +44,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'backend.middleware.AbortDetectionMiddleware',
 ]
-# CORS_ALLOWED_ORIGINS=[
-#     'http://localhost:3000',
-# ]
-CORS_ALLOWED_ORIGINS = [
-    'https://interview-room-0-1.vercel.app',
+CORS_ALLOWED_ORIGINS=[
+    'http://localhost:3000',
 ]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://interviewrdj.vercel.app',
+# ]
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -78,6 +82,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -113,9 +118,10 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'), 
+]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-import os
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 

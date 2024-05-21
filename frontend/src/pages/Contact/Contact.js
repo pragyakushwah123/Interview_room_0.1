@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Image_Gif from "../../assets/images/cont-anm.gif";
 import axios from 'axios';
-import './contact.css'
 const URL = process.env.REACT_APP_BACKEND_URL + "/api/contact_us/";
-
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -25,12 +23,13 @@ const Contact = () => {
             // Send form data to the backend API
             const response = await axios.post(URL, formData);
             console.log(response.data); // Log the response from the backend
-            // if(data.success===true)
-            // {
-            //     toast.success(data.message);
-            // }
-
-
+            const data = response.data
+            if(data.success===true)
+            {
+                alert("form submitted successfully")
+            }
+            
+           
             setFormData({
                 name: '',
                 email: '',
@@ -61,7 +60,7 @@ const Contact = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label whitecolor">Message</label>
-                            <textarea className="form-control contact-input" id="message " name="message" value={formData.message} onChange={handleChange} rows="4" required></textarea>
+                            <textarea className="form-control contact-input" id="message" name="message" value={formData.message} onChange={handleChange} rows="4"></textarea>
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>

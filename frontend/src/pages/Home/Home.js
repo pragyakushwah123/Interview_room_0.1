@@ -5,7 +5,7 @@ import './home.css';
 function Home() {
     return (
         <>
-            <div className='col-12 background herosection pb-5 pt-2'>
+            <div className='col-12 background herosection py-5'>
                 <div className='container'>
                     <div className='row justify-content-center align-items-center'>
                         <div className='col-12 text-center mt-5'>
