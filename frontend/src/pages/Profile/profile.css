@@ -1,0 +1,10 @@
+.backbtn {
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+
+    padding: 10px 15px;
+}
+
+.backbtn a {
+  color:#fff;
+}

@@ -1,0 +1,76 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.avatar img {
+    height: 90px;
+}
+
+.profile-menu a {
+    color: black;
+}
+
+.user-menu ul {
+    padding: 0;
+}
+
+.sr-only {
+    display: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-bar ul {
+    padding: 0;
+}
+
+.listing .nav-link {
+    display: block;
+}
+
+.listing2 a {
+    color: var(--whitecolor);
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .avatar img {
+        height: 65px;
+    }
+
+    .hamburger {
+        font-size: 45px;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .menu-bar a {
+        color: var(--secondarycolor);
+    }
+
+    .listing2 {
+        display: none !important;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+    .nav-dropdown {
+        display: block;
+    }
+
+    .nav-dropdown .dropdown-item {
+        display: block;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,108 @@
+:root {
+  --font1: 60px;
+  --font2: 45px;
+  --font3: 30px;
+  --font4: 24px;
+  --font5: 20px;
+  --font6: 16px;
+  --font7: 14px;
+
+  --primarycolor: #5FC6C4;
+  --secondarycolor: #008196;
+  --whitecolor: #ffffff;
+}
+
+@font-face {
+  font-family: semiboldfont;
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: mediumfont;
+  src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: regularfont;
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+h1 {
+  font-family: semiboldfont;
+  font-size: var(--font1);
+  font-weight: 800;
+}
+
+h2 {
+  font-family: semiboldfont;
+  font-size: var(--font2);
+  font-weight: 700;
+}
+
+h3 {
+  font-family: mediumfont;
+  font-size: var(--font3);
+  font-weight: 700;
+}
+
+h4 {
+  font-family: mediumfont;
+  font-size: var(--font4);
+  font-weight: 700;
+}
+
+h5 {
+  font-family: regularfont;
+  font-size: var(--font5);
+  font-weight: 600;
+}
+
+h6 {
+  font-family: regularfont;
+  font-size: var(--font6);
+  font-weight: 600;
+}
+
+p {
+  font-family: regularfont;
+  font-size: var(--font7);
+  font-weight: 500;
+}
+
+.opacity5 {
+  opacity: 0.5;
+}
+
+.primarycolor {
+  color: var(--primarycolor);
+}
+
+.secondarycolor {
+  color: var(--secondarycolor);
+}
+
+.whitecolor {
+  color: var(--whitecolor);
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/bg.png); */
+
+.WithHP {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/images/bg.png);
+  min-height: 100vh;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.WithoutHP {
+  background-color: var(--whitecolor);
+}

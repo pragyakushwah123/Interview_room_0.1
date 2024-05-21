@@ -1,0 +1,36 @@
+.accordion-button:hover {
+    background-color: #ccd2db;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+.accordion-button {
+    color: none !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important
+}
+
+.accordion-button *::after,
+*::before {
+    box-sizing: border-box !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.accordion .collapse {
+    visibility: visible;
+}
