@@ -40,12 +40,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'backend.middleware.AbortDetectionMiddleware',
 ]
-CORS_ALLOWED_ORIGINS=[
-    'http://localhost:3000',
-]
-# CORS_ALLOWED_ORIGINS = [
-#     'https://interviewrdj-git-main-aashish-yadavs-projects.vercel.app',
+# CORS_ALLOWED_ORIGINS=[
+#     'http://localhost:3000',
 # ]
+CORS_ALLOWED_ORIGINS = [
+    'https://interview-room-0-1.vercel.app',
+]
 
 CORS_ALLOW_CREDENTIALS = True
 
